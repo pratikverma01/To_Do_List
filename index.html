@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global News Aggregator</title>
@@ -10,6 +11,44 @@
   <h1>📰 Global News Aggregator</h1>
   <div id="news-container">Loading news...</div>
 
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+  <div class="container">
+    <h1>📝 My Pro To-Do</h1>
+    <div class="todo-box">
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="What needs to be done?" />
+        <input type="datetime-local" id="dueDate" />
+        <button onclick="addTask()"><i class="fas fa-plus"></i></button>
+      </div>
+
+      <div class="filters">
+        <button onclick="setFilter('all')">All</button>
+        <button onclick="setFilter('active')">Active</button>
+        <button onclick="setFilter('completed')">Completed</button>
+      </div>
+
+      <button onclick="clearCompleted()" class="clear-btn">Clear Completed</button>
+
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+>>>>>>> 88c09df7997a0e1a61d71b9185a61a94ae6060d1
   <script src="script.js"></script>
 </body>
 </html>
